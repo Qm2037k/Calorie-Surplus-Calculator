@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>The Meals Plan</title>
+
+</head>
+<body>
+    <header class="navbar-header">
+  <nav class="navbar">
+    <!-- Brand Logo / Name -->
+    <a href="#" class="brand-logo">
+      <span class="logo-icon">▲</span>Your Health
+    </a>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links">
+      <li><a href="Home.html" class="nav-link active">Home</a></li>
+      <li><a href="Nutrition.html" class="nav-link">Nutrition</a></li>
+      <li><a href="About.html" class="nav-link">About</a></li>
+      <li><a href="Help.html" class="nav-link">Help</a></li>
+    </ul>
+
+    
+</header>
+<main class="hero-container">
+  <!-- Main Banner / Content -->
+  <section class="hero-content">
+  
+    <h1 class="hero-title">
+      I am Helping To Gain Weight <span class="highlight">By Muazzam Qureshi</span>
+    </h1>
+    <p class="hero-description">
+      Achieve your physical goals with custom calorie surplus tracking, tailored workout regimens, and high-density meal strategies built for every body type.
+    </p>
+    <div class="cta-group">
+
+      <a href="#calculator" class="btn-secondary">Calorie Surplus Calculator</a>
+    </div>
+  </section>
+<section id="calculator" class="calc-section">
+  <div class="calc-container">
+    
+
+    <div class="calc-grid">
+      <!-- Input Form Card -->
+      <div class="card calc-form">
+        <div class="input-group">
+          <label for="gender">Gender Type</label>
+          <select id="gender" class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" class="form-control" value="70" min="30" max="250">
+          </div>
+         <div class="input-row">
+          <div class="input-group">
+            <label for="height-feet">Height (Feet)</label>
+            <input type="number" id="height-feet" class="form-control" value="5" min="3" max="8">
+          </div>
+          <div class="input-group">
+            <label for="height-inches">Height (Inches)</label>
+            <input type="number" id="height-inches" class="form-control" value="9" min="0" max="11">
+          </div>
+        </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label for="age">Age (Years)</label>
+            <input type="number" id="age" class="form-control" value="25" min="10" max="100">
+          </div>
+          <div class="input-group">
+            <label for="activity">Activity Level</label>
+            <select id="activity" class="form-control">
+              <option value="1.2">Sedentary (Little/No exercise)</option>
+              <option value="1.375">Lightly Active (1-3 days/week)</option>
+              <option value="1.55" selected>Moderately Active (3-5 days/week)</option>
+              <option value="1.725">Very Active (6-7 days/week)</option>
+            </select>
+          </div>
+        </div>
+        <script src="script.js"></script>
+
+        <div class="input-group">
+          <label for="surplus-target">Surplus Intensity</label>
+          <select id="surplus-target" class="form-control">
+            <option value="300">Lean Bulk (+300 kcal/day - Minimal fat gain)</option>
+            <option value="500" selected>Standard Bulk (+500 kcal/day - Optimal muscle growth)</option>
+            <option value="750">Aggressive Bulk (+750 kcal/day - Rapid mass building)</option>
+          </select>
+        </div>
+
+        <button type="button" id="calculate-btn" class="btn-primary calc-submit">Calculate Target Surplus</button>
+      </div>
+
+      <!-- Results Display Card -->
+      <div class="card calc-results">
+        <h3>Your Bulk Targets</h3>
+        
+        <div class="result-box">
+          <span class="result-label">Estimated Maintenance (TDEE)</span>
+          <span id="res-tdee" class="result-value">2,450 kcal</span>
+        </div>
+
+        <div class="result-box highlight-box">
+          <span class="result-label">Target Daily Surplus Intake</span>
+          <span id="res-surplus" class="result-value">2,950 kcal</span>
+        </div>
+
+        <div class="macro-breakdown">
+          <h4>Estimated Daily Macros</h4>
+          <div class="macro-grid">
+            <div class="macro-card">
+              <span id="res-protein" class="macro-number">158g</span>
+              <span class="macro-name">Protein</span>
+            </div>
+            <div class="macro-card">
+              <span id="res-carbs" class="macro-number">368g</span>
+              <span class="macro-name">Carbs</span>
+            </div>
+            <div class="macro-card">
+              <span id="res-fats" class="macro-number">98g</span>
+              <span class="macro-name">Fats</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer-container">
+  <div class="footer-content">
+    <!-- Brand & Mission Column -->
+    <div class="footer-brand">
+      <a href="#" class="brand-logo">
+        <span class="logo-icon">▲</span>Your Health
+      </a>
+      <p class="brand-description">
+        Science-backed weight gain solutions, custom calorie surplus plans, and nutrition strategies for every body type.
+      </p>
+      <div class="status-indicator">
+        <span class="status-dot"></span> All systems operational
+      </div>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="footer-column">
+      <h4>Platform</h4>
+      <ul>
+        <li><a href="#home">Facebook</a></li>
+        <li><a href="#nutrition">Instagram</a></li>
+        <li><a href="#calculator">LinkdIn</a></li>
+        <li><a href="#about">Whatspp</a></li>
+      </ul>
+    </div>
+
+    <!-- Support Column -->
+    <div class="footer-column">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#help">Help & FAQ</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+      </ul>
+    </div>
+
+    <!-- Developer / Connect Column -->
+    <div class="footer-column">
+      <h4>Developer & Social</h4>
+      <ul class="social-links">
+        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+        <li><a href="mailto:contact@bulkup.com">Contact Developer</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Bottom Copyright & Developer Credit -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 BulkUp Inc. All rights reserved.</p>
+    <p class="dev-credit">Designed & Built by <span class="highlight">Muazzam Qureshi</span></p>
+  </div>
+</footer>
+    
+</body>
+</html>
